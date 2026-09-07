@@ -1,0 +1,20 @@
+StableVQA-Edge
+Copyright 2026 The StableVQA-Edge authors
+
+This product includes software developed by the StableVQA-Edge authors.
+
+--------------------------------------------------------------------------
+Third-party components redistributed in this repository
+--------------------------------------------------------------------------
+
+ONNX Runtime (third_party/onnxruntime-macos/)
+  Copyright (c) Microsoft Corporation. Licensed under the MIT License.
+  The upstream LICENSE and ThirdPartyNotices.txt ship inside that directory
+  and are preserved unmodified. Refer to them, not to this file, for the
+  terms covering that component.
+
+Derived model artifacts (onnx_models/, android/app/src/main/assets/)
+  These are ONNX conversions of upstream checkpoints, not original works of
+  this project. Their provenance and licence status — including one upstream
+  that states no licence — are documented in MODELS.md. No licence grant over
+  those files is asserted by this repository's LICENSE.

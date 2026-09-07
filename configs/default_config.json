@@ -1,0 +1,7 @@
+{
+  "_comment": "DOCUMENTATION ONLY — this file is NOT read at runtime. Each native platform implementation compiles these values in as constants (see platform/*/StableVqa*.cpp). Editing this file has no effect on execution; it records the shared deployed configuration for reference.",
+  "model_directory": "onnx_models",
+  "num_clips": 4,
+  "frames_per_clip": 32,
+  "frame_stride": 2
+}

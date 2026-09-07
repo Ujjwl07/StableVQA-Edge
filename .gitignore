@@ -1,0 +1,51 @@
+# Build outputs
+build/
+build*/
+out/
+.cxx/
+android/app/build/
+android/local.properties
+
+# Editor / OS / tooling
+.DS_Store
+.idea/
+.vscode/
+.claude/
+.gradle/
+__pycache__/
+*.pyc
+
+# Compiled artifacts (never commit; ship prebuilt runnables as GitHub Release assets instead)
+*.o
+*.obj
+*.so
+*.dylib
+# ...but the bundled macOS ONNX Runtime must ship, or a fresh clone cannot link
+!third_party/onnxruntime-macos/lib/*.dylib
+*.dll
+*.exe
+*.apk
+*.aab
+
+# Local run outputs
+stablevqa_results.csv
+stablevqa_calibration.csv
+
+# macOS archive cruft and CMake/IDE state
+__MACOSX/
+CMakeCache.txt
+CMakeFiles/
+*.a
+android/.kotlin/
+.kotlin/
+
+# Internal working documents — never publish
+*Review*.md
+*Meta Reviews*.md
+TRACK3A_REVISION_NOTES.md
+CameraReady*.pdf
+
+# Model weights ship as a GitHub Release asset, not in the tree (see MODELS.md)
+onnx_models/*.onnx
+onnx_models/*.data
+android/app/src/main/assets/*.onnx

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:background="#121212">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="StableVQA Batch Benchmark"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Video preview (first frame of first video) -->
+    <ImageView
+        android:id="@+id/flowVisualization"
+        android:layout_width="320dp"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:background="#1E1E1E"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Status / progress text -->
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Initializing…"
+        android:textColor="#CCCCCC"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:minLines="4"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Folder picker button -->
+    <Button
+        android:id="@+id/selectFolderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Video Folder"
+        android:enabled="false"
+        android:backgroundTint="#BB86FC"
+        android:textColor="#000000"
+        android:paddingHorizontal="32dp"/>
+
+</LinearLayout>
