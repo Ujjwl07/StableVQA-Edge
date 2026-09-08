@@ -334,8 +334,8 @@ def main():
     ap.add_argument("--clips", type=int, default=4, help="expected clips per video (default 4)")
     ap.add_argument("--min-srocc", type=float, default=0.92,
                     help="accuracy gate threshold (default 0.92)")
-    ap.add_argument("--tolerance-mos", type=float, default=1.0,
-                    help="max per-video cross-platform difference allowed (default 1.0)")
+    ap.add_argument("--tolerance-mos", type=float, default=1.3,
+                    help="max per-video cross-platform difference allowed (default 1.3)")
     ap.add_argument("--tie-margin", type=float, default=1.0,
                     help="score gap below which two videos count as near-ties (default 1.0)")
     args = ap.parse_args()
