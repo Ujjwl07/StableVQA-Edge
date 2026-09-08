@@ -185,3 +185,13 @@ copy the five `*_quant.onnx` files into
 | macOS Apple Silicon | CMake source | Tested |
 | Linux NVIDIA GPU | CMake source | Tested |
 | Android / Exynos | Full Gradle/JNI application | Tested |
+
+## Baseline StableVQA Citation
+
+  @inproceedings{kou2023stablevqa,
+  title={Stablevqa: A deep no-reference quality assessment model for video stability},
+  author={Kou, Tengchuan and Liu, Xiaohong and Sun, Wei and Jia, Jun and Min, Xiongkuo and Zhai, Guangtao and Liu, Ning},
+  booktitle={Proceedings of the 31st ACM International Conference on Multimedia},
+  pages={1066--1076},
+  year={2023}
+}
