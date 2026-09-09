@@ -61,11 +61,11 @@ ls -lh onnx_models/
 The repository expects these five quantized models:
 
 ```text
-backbone_quant.onnx
-deblur_net_quant.onnx
+backbone_fp16.onnx
+deblur_net_fp16.onnx
 flow_model_quant.onnx
-motion_analyzer_quant.onnx
-quality_head_quant.onnx
+motion_analyzer_fp16.onnx
+quality_head_fp16.onnx
 ```
 
 Verify their checksums before running:
