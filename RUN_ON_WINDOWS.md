@@ -138,12 +138,3 @@ Environment variables for manual experiments:
 - **Reset**: `Remove-Item Env:SVQA_THREADS; Remove-Item Env:SVQA_NO_AFFINITY`
 
 ---
-
-## 8. Troubleshooting
-
-| Issue | Cause & Solution |
-|---|---|
-| `The requested API version [18] is not available...` | Windows loaded an older `onnxruntime.dll` from `C:\Windows\System32`. **Solution**: Copy `C:\libraries\onnxruntime-win-x64\lib\onnxruntime.dll` directly into `build-win\Release\` so it takes precedence. |
-| `Could not find a package configuration file provided by "OpenCV"` | Ensure `-DOpenCV_DIR` points to `.../build/x64/vc16/lib` where `OpenCVConfig.cmake` resides. |
-| `Cannot open video list file` | Run `stablevqa.exe` from the repository root or provide a valid path to `videos.txt`. |
-| `Skipping (cannot open): video.mp4` | OpenCV could not decode the video format. Ensure `opencv_videoio_ffmpeg*.dll` is in `PATH` or beside `stablevqa.exe`. |
