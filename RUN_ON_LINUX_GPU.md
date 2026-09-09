@@ -2,7 +2,7 @@
 
 This guide builds and runs the CUDA implementation of StableVQA on a Linux x86-64 system with an NVIDIA GPU.
 
-The Linux GPU implementation uses ONNX Runtime's CUDA Execution Provider and retains the project's optional TensorRT fallback, concurrent-stream controls, and dual-GPU placement controls in `platform/gpu/StableVqaGpu.cpp`.
+The Linux GPU implementation uses ONNX Runtime's CUDA Execution Provider and retains the project's optional TensorRT fallback, concurrent-stream controls in `platform/gpu/StableVqaGpu.cpp`.
 
 ## 1. Prerequisites
 
