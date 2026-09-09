@@ -22,8 +22,8 @@ nvidia-smi
 
 Install:
 
-- CUDA **12.x**
-- cuDNN **9.x**
+- CUDA **12.0**
+- cuDNN **9**
 - CMake **3.20+**
 - A C++17 compiler
 - OpenCV development files
