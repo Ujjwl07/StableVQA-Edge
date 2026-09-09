@@ -30,7 +30,7 @@ Install:
 - `curl` or `wget`
 - `tar`
 
-The shipped Linux GPU configuration uses ONNX Runtime **1.20.1 GPU**, which matches the CUDA 12.x + cuDNN 9.x stack. ONNX Runtime's compatibility table lists the 1.20.x GPU packages under CUDA 12.x and cuDNN 9.x.
+The shipped Linux GPU configuration uses ONNX Runtime **1.20.1 GPU**, which matches the CUDA 12.0 + cuDNN 9 stack. ONNX Runtime's compatibility table lists the 1.20.x GPU packages under CUDA 12.0 and cuDNN 9.
 
 For Debian/Ubuntu, install the general build tools and OpenCV with:
 
@@ -88,7 +88,7 @@ nvidia-smi
 nvcc --version
 ```
 
-For this configuration, `nvcc` should report CUDA 12.x.
+For this configuration, `nvcc` should report CUDA 12.0.
 
 Also confirm that CUDA runtime libraries are available:
 
